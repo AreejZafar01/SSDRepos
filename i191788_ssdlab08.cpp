@@ -1,98 +1,35 @@
+// C++ program to demonstrate infinite loops
+// using for and while loop
+ 
+// Uncomment the  sections to see the output
 #include <iostream>
-
 using namespace std;
-
-class Plan {
-
-
-    double rate;
-
-    void getRate()
+int main()
+{
+    int i;
+ 
+    // This is an infinite for loop as the condition
+    // expression is blank
+    for (;;) {
+        cout << "This loop will run forever.\n";
+    }
+ 
+    // This is an infinite for loop as the condition
+    // given in while loop will keep repeating infinitely
+    /*
+    while (i != 0)
     {
-        double r = 3.0;
-        rate = r;
+        i-- ;
+        cout << "This loop will run forever.\n";
     }
-
-    void calculateBill(int units)
+    */
+ 
+    // This is an infinite for loop as the condition
+    // given in while loop is "true"
+    /*
+    while (true)
     {
+        cout << "This loop will run forever.\n";
     }
-
-};
-
-class Domesticplan {
-    double rate;
-public:
-
-    void getRate() {
-        rate = 4.0;
-
-    }
-    void calculateBill(int units)
-    {
-
-        double bill = rate * units;
-
-        cout << " Domestic Plan Bill :  " << bill<<endl;
-    }
-};
-
-class InstitutionalPlan {
-    double rate;
-public:
-    void getRate() {
-        rate = 2.0;
-    }
-    void calculateBill(int units)
-    {
-        double bill=rate *units;
-
-        cout << "Institutional Plan Bill: PKR " << bill<<endl;
-    }
-};
-
-class CommercialPlan {
-
-    double rate;
-
-public:
-
-    void getRate()
-    {
-        rate = 2.5;
-    }
-    void calculateBill(int units) {
-
-        double bill = (double)rate * units;
-
-        cout << "Commercial Plan Bill: PKR " << bill<<endl;
-    }
-};
-
-
-class GetPlanFact {
-    Domesticplan p3;
-    InstitutionalPlan p1;
-    CommercialPlan p2;
-public:
-
-    void getPlan() {
-        p1.getRate();
-
-        p1.calculateBill(10);
-
-        p2.getRate();
-
-        p2.calculateBill(10);
-
-        p3.getRate();
-
-        p3.calculateBill(10);
-       
-    }
-};
-
-int main() {
-    GetPlanFact g;
-    g.getPlan();
-        return 0;
-}                
+    */
+}
