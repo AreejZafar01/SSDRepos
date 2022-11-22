@@ -10,7 +10,22 @@ class Vehicle
 	string colour ;
 
 public:
+	Vehicle()
+	{
+	string name = " ";
+	string model = " " ;
+	int year =0 ;
+	string colour  = " ";
 	
+	}
+	Vehicle(string n, string m, int y, string colour)
+	{
+	string name = n;
+	string model = m ;
+	int year =y ;
+	string colour  = c;
+	
+	}
 	string manufacture()
 	{
 		return "vehicle class produced";
